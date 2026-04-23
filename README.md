@@ -63,7 +63,7 @@ The project demonstrates real-world backend development concepts like REST APIs,
 
 ###  Update Post (Detailed Request & Response)
 
-![Update Detailed](BloggingApplication_Screenshots/Screenshot-update posts.png)
+![Update Detailed](BloggingApplication_Screenshots/Screenshot-update-posts.png)
 
 ---
 
