@@ -1,111 +1,143 @@
-#  Blogging Application
+# Blogging Application (Java Full Stack Project)
 
-## Overview
--> A RESTful Blogging Application built using Spring Boot, JPA, and PostgreSQL.
--> Implements full CRUD operations
--> Tested using Postman
--> Follows REST API architecture
+##  Project Description
 
-------------------------------------------------------------
+This is a **full-stack Blogging Application** developed using **Java and Spring Boot**.
+It allows users to perform complete **CRUD operations** on blog posts with secure authentication and authorization.
+
+The project demonstrates real-world backend development concepts like REST APIs, layered architecture, and security handling.
+
+---
+
+## Key Highlights
+
+*  Secure Login & Authentication
+*  Create, Update, Delete Blog Posts
+*  Fetch All Posts & Individual Post
+*  Unauthorized Access Handling
+*  RESTful API Design
+*  Database Integration
+
+---
 
 ##  Tech Stack
-- Java
-- Spring Boot
-- PostgreSQL
 
-------------------------------------------------------------
+* **Backend:** Java, Spring Boot
+* **Database:** MySQL
+* **Tools:** Postman, Maven
+* **Architecture:** REST API, MVC Pattern
 
-##  API Endpoints
+---
 
-**Base URL:** http://localhost:8081
-
-###  User APIs
-
-- POST /api/users/
-- GET /api/users/
-- GET /api/users/{id}
-- PUT /api/users/{id}
-- DELETE /api/users/{id}
-
-###  Category APIs
-
-- POST /api/categories/
-- GET /api/categories/
-
-###  Post APIs
-
-- POST /api/posts/
-- GET /api/posts/
-- GET /api/posts/{id}
-- PUT /api/posts/{id}
-- DELETE /api/posts/{id}
-
---------------------------------------------------------
-## Sample Request JSON
-### Create Post
-
-```json
-{
-  "title": "Spring Boot Basics",
-  "content": "Spring Boot simplifies backend development",
-  "user": { "id": 1 },
-  "category": { "id": 1 }
-}
-```
-
-### Update Post
-
-```json
-{
-  "title": "Advanced Java",
-  "content": "Java includes collections and streams",
-  "user": { "id": 1 },
-  "category": { "id": 1 }
-}
-```
-
------------------------------------------------------------
-##  Features
-
-* Create Users
-* Create Categories
-* Create Blog Posts
-* REST API Architecture
-* Database Integration
-
----------------------------------------------------------
-
-##  API Endpoints
-
-###  User
-
-* POST `/api/users/`
-* GET `/api/users/`
-
-###  Category
-
-* POST `/api/categories/`
-
-###  Post
-
-* POST `/api/posts/`
-
-----------------------------------------------
 ##  Screenshots
 
-![User](screenshots/user.png)
-![Post](screenshots/post.png)
-![Get](screenshots/get-posts.png)
-![Update](screenshots/update-post.png)
-![Delete](screenshots/delete-post.png)
+###  Login
 
-##  Future Enhancements
+![Login](BloggingApplication_Screenshots/login.png)
 
-* JWT Authentication
-* Role-based access
+###  Create Post
 
-----------------------------------------------------
+![Create Post](BloggingApplication_Screenshots/create-post.png)
+
+###  Get All Posts
+
+![Get Posts](BloggingApplication_Screenshots/get-posts.png)
+
+###  Get Post by ID
+
+![Get Post](BloggingApplication_Screenshots/get.post2.png)
+
+###  Update Post
+
+![Update](BloggingApplication_Screenshots/update.png)
+
+###  Update (Detailed)
+
+![Update Posts](BloggingApplication_Screenshots/Screenshot-update_posts.png)
+
+###  Delete Post
+
+![Delete](BloggingApplication_Screenshots/screenshots-delete-post.png)
+
+###  Get Posts (Alt View)
+
+![Get Posts Alt](BloggingApplication_Screenshots/screenshots-get-posts.png)
+
+###  Get Users
+
+![Users](BloggingApplication_Screenshots/screenshots-get-users.png)
+
+###  Unauthorized Access
+
+![Unauthorized](BloggingApplication_Screenshots/unauthorized.png)
+
+---
+## ⚙️ How to Run
+
+### 1️. Clone Repository
+
+```bash
+git clone https://github.com/Ramireddyvigneswari/blogging-application.git
+```
+
+### 2️. Navigate to Project
+
+```bash
+cd blogging-application
+```
+
+### 3️. Configure Database
+
+Update `application.properties`:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:5432/blog_app
+spring.datasource.username=root
+spring.datasource.password=postgresql123
+```
+
+### 4️. Run Application
+
+```bash
+mvn spring-boot:run
+```
+------
+
+##  API Endpoints
+
+| Method | Endpoint    | Description     |
+| ------ | ----------- | --------------- |
+| POST   | /login      | User login      |
+| POST   | /posts      | Create post     |
+| GET    | /posts      | Get all posts   |
+| GET    | /posts/{id} | Get single post |
+| PUT    | /posts/{id} | Update post     |
+| DELETE | /posts/{id} | Delete post     |
+
+---
+
+##  What I Learned
+
+* Building REST APIs using Spring Boot
+* Handling authentication & authorization
+* Structuring scalable backend applications
+* Database integration using JPA/Hibernate
+* API testing using Postman
+
+---
 
 ##  Author
 
-Vigneswari Ramireddy
+** Vigneswari Ramireddy **
+
+---
+
+##  Future Improvements
+
+* Add frontend (React/Angular)
+* Implement JWT Authentication
+* Deploy on cloud (AWS/Render)
+
+---
+
+⭐ If you like this project, consider giving it a star!
