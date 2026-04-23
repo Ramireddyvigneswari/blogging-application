@@ -115,6 +115,30 @@ mvn spring-boot:run
 | DELETE | /posts/{id} | Delete post     |
 
 ---
+##  Architecture
+
+The application follows a layered architecture:
+
+* **Controller Layer** → Handles HTTP requests and responses
+* **Service Layer** → Contains business logic
+* **Repository Layer** → Interacts with the database using JPA
+
+---
+
+##  Security
+
+* Implemented authentication for users
+* Restricted unauthorized access to protected APIs
+
+---
+
+##  Improvements Implemented
+
+* Exception handling for API errors
+* Input validation for requests
+* Structured REST API responses
+
+---
 
 ##  What I Learned
 
@@ -125,10 +149,17 @@ mvn spring-boot:run
 * API testing using Postman
 
 ---
+##  Future Enhancements
+
+* JWT-based authentication
+* Pagination for posts
+* Frontend integration (React)
+* Deployment on cloud
+----
 
 ##  Author
 
-** Vigneswari Ramireddy **
+Vigneswari Ramireddy 
 
 ---
 
