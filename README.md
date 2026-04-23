@@ -24,4 +24,4 @@ This is a RESTful Blogging Application developed using Spring Boot and PostgreSQ
 
 ## Author
 
-Vigneswari
+Vigneswari Ramireddy
