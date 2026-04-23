@@ -31,45 +31,63 @@ The project demonstrates real-world backend development concepts like REST APIs,
 
 ##  Screenshots
 
-###  Login
+###  User Login (JWT Token Generation)
 
 ![Login](BloggingApplication_Screenshots/login.png)
 
-###  Create Post
+---
+
+###  Create Post (POST API)
 
 ![Create Post](BloggingApplication_Screenshots/create-post.png)
 
-###  Get All Posts
+---
+
+###  Get All Posts (GET API)
 
 ![Get Posts](BloggingApplication_Screenshots/get-posts.png)
 
-###  Get Post by ID
+---
+
+###  Get Single Post by ID
 
 ![Get Post](BloggingApplication_Screenshots/get.post2.png)
 
-###  Update Post
+---
 
-![Update](BloggingApplication_Screenshots/update.png)
+###  Update Post (PUT API)
 
-###  Update (Detailed)
+![Update Post](BloggingApplication_Screenshots/update.png)
 
-![Update Posts](BloggingApplication_Screenshots/Screenshot-update_posts.png)
+---
 
-###  Delete Post
+###  Update Post (Detailed Request & Response)
 
-![Delete](BloggingApplication_Screenshots/screenshots-delete-post.png)
+![Update Detailed](BloggingApplication_Screenshots/Screenshot-update posts.png)
 
-###  Get Posts (Alt View)
+---
+
+###  Delete Post (DELETE API)
+
+![Delete Post](BloggingApplication_Screenshots/screenshots-delete-post.png)
+
+---
+
+###  Get Posts (Alternate View)
 
 ![Get Posts Alt](BloggingApplication_Screenshots/screenshots-get-posts.png)
 
-###  Get Users
+---
 
-![Users](BloggingApplication_Screenshots/screenshots-get-users.png)
+###  Get Users (Admin Access)
 
-###  Unauthorized Access
+![Get Users](BloggingApplication_Screenshots/screenshots-get-users.png)
 
-![Unauthorized](BloggingApplication_Screenshots/unauthorized.png)
+---
+
+###  Unauthorized Access (Without Token)
+
+![Unauthorized](BloggingApplication_Screenshots/unautherized.png)
 
 ---
 ## ⚙️ How to Run
