@@ -1,23 +1,70 @@
 #  Blogging Application
 
 ## Overview
+-> A RESTful Blogging Application built using Spring Boot, JPA, and PostgreSQL.
+-> Implements full CRUD operations
+-> Tested using Postman
+-> Follows REST API architecture
 
-This is a RESTful Blogging Application developed using Spring Boot.
-It allows users to create, manage, and retrieve blog posts.
+------------------------------------------------------------
 
----
+##  Tech Stack
+- Java
+- Spring Boot
+- PostgreSQL
 
-## 🛠 Tech Stack
+------------------------------------------------------------
 
-* Java 17
-* Spring Boot
-* Spring Data JPA
-* PostgreSQL
-* Hibernate
-* Postman
+##  API Endpoints
 
----
+**Base URL:** http://localhost:8081
 
+###  User APIs
+
+- POST /api/users/
+- GET /api/users/
+- GET /api/users/{id}
+- PUT /api/users/{id}
+- DELETE /api/users/{id}
+
+###  Category APIs
+
+- POST /api/categories/
+- GET /api/categories/
+
+###  Post APIs
+
+- POST /api/posts/
+- GET /api/posts/
+- GET /api/posts/{id}
+- PUT /api/posts/{id}
+- DELETE /api/posts/{id}
+
+--------------------------------------------------------
+## Sample Request JSON
+### Create Post
+
+```json
+{
+  "title": "Spring Boot Basics",
+  "content": "Spring Boot simplifies backend development",
+  "user": { "id": 1 },
+  "category": { "id": 1 }
+}
+```
+
+### Update Post
+
+```json
+{
+  "title": "Advanced Java",
+  "content": "Java includes collections and streams",
+  "user": { "id": 1 },
+  "category": { "id": 1 }
+}
+```
+
+-----------------------------------------------------------
 ##  Features
 
 * Create Users
@@ -26,7 +73,7 @@ It allows users to create, manage, and retrieve blog posts.
 * REST API Architecture
 * Database Integration
 
----
+---------------------------------------------------------
 
 ##  API Endpoints
 
@@ -43,14 +90,21 @@ It allows users to create, manage, and retrieve blog posts.
 
 * POST `/api/posts/`
 
----
+----------------------------------------------
+##  Screenshots
+
+![User](screenshots/user.png)
+![Post](screenshots/post.png)
+![Get](screenshots/get-posts.png)
+![Update](screenshots/update-post.png)
+![Delete](screenshots/delete-post.png)
 
 ##  Future Enhancements
 
 * JWT Authentication
 * Role-based access
 
----
+----------------------------------------------------
 
 ##  Author
 
