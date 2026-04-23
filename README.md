@@ -30,6 +30,7 @@ The project demonstrates real-world backend development concepts like REST APIs,
 ---
 
 ##  Screenshots
+Below are API execution screenshots demonstrating authentication and CRUD operations:
 
 ###  User Login (JWT Token Generation)
 
